@@ -6,7 +6,7 @@ Tata cara install
   
    composer install
    
-3. ubah file .env_dev menjadi .env
+3. rename file .env_dev menjadi .env
 4. Jalankan perintah
 
    php artisan config:cache
@@ -16,6 +16,8 @@ Tata cara install
    php artisan migrate:fresh --seed
    
 6. untuk menjalankan aplikasi, jalankan perintah :
+
+   npm install
    
    npm run build
 
