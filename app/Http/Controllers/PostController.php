@@ -45,6 +45,12 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'name' => 'required|unique:posts|min:5',
+            'category' => 'required',
+            'description' => 'required',
+        ]);
+
         $data = $request->all();
         $new_post = Post::create($data);
 
@@ -87,6 +93,12 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $validated = $request->validate([
+            'name' => 'required|unique:posts|min:5',
+            'category' => 'required',
+            'description' => 'required',
+        ]);
+        
         $data = $request->all();
 
         $change_posting = Post::find($id);
