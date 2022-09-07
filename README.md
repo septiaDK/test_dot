@@ -20,3 +20,8 @@ Tata cara install
    npm run build
 
    php artisan serve
+
+
+Data User untuk Login
+email : admin@example.com
+password : admin123
