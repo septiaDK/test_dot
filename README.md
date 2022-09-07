@@ -16,5 +16,6 @@ Tata cara install
    php artisan migrate:fresh --seed
    
 6. untuk menjalankan aplikasi, jalankan perintah :
+   npm run build
 
    php artisan serve
