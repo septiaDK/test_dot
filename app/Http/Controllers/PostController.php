@@ -19,7 +19,7 @@ class PostController extends Controller
         if ($keyword) {
             $posting = Post::where('name', 'LIKE', "%$keyword%")->paginate(8);
         } else {
-            $posting = Post::where('name', 'LIKE', "%$keyword%")->paginate(8);
+            $posting = Post::paginate(8);
         }
 
         return view('pages.post_list', compact('posting'));
