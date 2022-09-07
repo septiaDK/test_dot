@@ -6,6 +6,10 @@ Tata cara install
   
    composer install
    
+   npm install
+   
+   npm run build
+   
 3. rename file .env_dev menjadi .env
 4. Jalankan perintah
 
@@ -15,11 +19,9 @@ Tata cara install
 
    php artisan migrate:fresh --seed
    
-6. untuk menjalankan aplikasi, jalankan perintah :
-
-   npm install
+6. Jangan lupa server mysql dinyalakan terlebih dahulu.
    
-   npm run build
+7. untuk menjalankan aplikasi, jalankan perintah :   
 
    php artisan serve
 
