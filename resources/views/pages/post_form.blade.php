@@ -25,8 +25,8 @@
             @endif
             <div>
                 <form class="w-full" action="{{ $action }}" method="POST">
-                    @method('PUT')    
                     @if ($title == 'Edit Posting')
+                    @method('PUT')    
                     @else
                     @method('POST')
                     @endif
